@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: consul-test
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        tags: spring-boot-consul-integration
+        enabled: true
+      config:
+        enabled: true
+        fail-fast: true
+        prefix: application/config
